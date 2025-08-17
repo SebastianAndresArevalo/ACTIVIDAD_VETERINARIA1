@@ -10,7 +10,6 @@ public class Veterinaria {
     private ArrayList<Consulta> listaConsultas;
     private ArrayList<Veterinario> listaVeterinarios;
     private ArrayList<Mascota> listaMascotas;
-    private String ultimaFechaBuscada;
 
     public Veterinaria(String nombre, String direccion) {
 
@@ -22,13 +21,6 @@ public class Veterinaria {
 
     }
 
-    public String getUltimaFechaBuscada() {
-        return ultimaFechaBuscada;
-    }
-
-    public void setUltimaFechaBuscada(String ultimaFechaBuscada) {
-        this.ultimaFechaBuscada = ultimaFechaBuscada;
-    }
 
     public static Veterinaria getInstance() {
         if (instance == null) {
